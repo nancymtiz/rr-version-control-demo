@@ -1,3 +1,7 @@
+##Lesson 1 ---
+install.packages("knitr")
+install.packages("dplyr")
+install.packages("rmarkdown")
 ---
 title: "GDP and life expectancy"
 output:
@@ -27,7 +31,7 @@ The Gapminder dataset contains life expectancy and GDP per capita information fo
 ```{r set-year}
 # change here for analysis for another year
 # make sure to choose a year for which there is data available
-analysis_year <- 2007
+analysis_year <- 1992
 ```
 
 In this report we analyze the relationship between GDP and life expectancy in `r analysis_year` overall and by year.
@@ -54,3 +58,4 @@ ggplot(data = gap_subset, aes(x = gdpPercap, y = lifeExp, color = continent)) +
   xlab("GDP per capita") +
   ylab("Life expectancy")
 ```
+
